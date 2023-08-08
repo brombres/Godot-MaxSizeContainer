@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2022 Matthieu Huvé
+Copyright (c) 2022 Matthieu Huvé (3.x original)
+Copyright (c) 2023 Brom Bresenham (4.x port)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
