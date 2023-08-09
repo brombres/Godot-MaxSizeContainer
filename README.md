@@ -6,8 +6,8 @@ All Control nodes have a `rect_min_size` property, but they lack `rect_max_size`
 
 About     | Current Release
 ----------|-----------------------
-Version   | 1.2
-Date      | August 8, 2023
+Version   | 1.3
+Date      | August 9, 2023
 Platform  | Godot 4.x (tested on 4.2-dev2)
 License   | [MIT License](LICENSE.md)
 Authors   | Matthieu Huvé (Godot 3.x original)<br>Benedikt Wicklein (Godot 4 Beta)<br>Brom Bresenham (Godot 4.x)
