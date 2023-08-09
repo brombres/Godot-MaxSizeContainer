@@ -41,11 +41,14 @@ add_child(MaxSizeContainer.new())
 
  *Note: only one child is supported*
 
- - Select the maximum size, and how you want the child node aligned when it reaches the maximum size.
-![Properties](./readme_files/inspector_fun_1_base.png)
-*(-1 means no limit)*
+ - Select the mode, the limit (pixel size or aspect ratio, depending on the mode), and how you want the child node aligned when it reaches the maximum size.
+![Properties](./readme_files/properties-2.png)
+![Properties](./readme_files/modes.png)
+*(In Pixel Size mode, -1 means no limit)*
 
 # Examples
+*(Screenshots from older version)*
+
 - Let's start from this scene.
 
 | ![SceneTree](./readme_files/tree_base.png) | ![SmallWindow](./readme_files/main_small.png)  | ![LargeWindow](./readme_files/main_without.png) |
@@ -76,5 +79,5 @@ If the container doesn't work, try these solutions:
 
 # License
 
-See [License file](https://github.com/MattUV/godot-MaxSizeContainer/blob/master/LICENSE.md)
+See [License file](https://github.com/brombres/Godot-MaxSizeContainer/blob/master/LICENSE.md)
 This README page was greatly inspired by [jmb462](https://github.com/jmb462/GodotQuickSettings/blob/main/README.md).

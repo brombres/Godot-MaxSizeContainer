@@ -1,0 +1,188 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl7qkq270wjvi"]
+
+[ext_resource type="Script" path="res://addons/MaxSizeContainer/max_size_container.gd" id="1_g8yl0"]
+
+[node name="MaxSizeDemo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="BlackBG" type="ColorRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="MaxSizeContainer" type="MarginContainer" parent="GridContainer/BlackBG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 237
+theme_override_constants/margin_top = 111
+theme_override_constants/margin_right = 237
+theme_override_constants/margin_bottom = 111
+script = ExtResource("1_g8yl0")
+limit = Vector2(100, 100)
+
+[node name="ColorRect" type="ColorRect" parent="GridContainer/BlackBG/MaxSizeContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GridContainer/BlackBG/MaxSizeContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "100x100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BlackBG2" type="ColorRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="MaxSizeContainer2" type="MarginContainer" parent="GridContainer/BlackBG2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 72
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 72
+theme_override_constants/margin_bottom = 0
+script = ExtResource("1_g8yl0")
+mode = 1
+limit = Vector2(4, 3)
+
+[node name="ColorRect" type="ColorRect" parent="GridContainer/BlackBG2/MaxSizeContainer2"]
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="Label" type="Label" parent="GridContainer/BlackBG2/MaxSizeContainer2/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "4:3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BlackBG3" type="ColorRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="MaxSizeContainer3" type="MarginContainer" parent="GridContainer/BlackBG3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+script = ExtResource("1_g8yl0")
+mode = 2
+limit = Vector2(4, 3)
+
+[node name="ColorRect" type="ColorRect" parent="GridContainer/BlackBG3/MaxSizeContainer3"]
+layout_mode = 2
+color = Color(0, 1, 0, 1)
+
+[node name="Label" type="Label" parent="GridContainer/BlackBG3/MaxSizeContainer3/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "4:3 or wider"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BlackBG4" type="ColorRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="MaxSizeContainer4" type="MarginContainer" parent="GridContainer/BlackBG4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 72
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 72
+theme_override_constants/margin_bottom = 0
+script = ExtResource("1_g8yl0")
+mode = 3
+limit = Vector2(4, 3)
+
+[node name="ColorRect" type="ColorRect" parent="GridContainer/BlackBG4/MaxSizeContainer4"]
+layout_mode = 2
+color = Color(0, 0, 1, 1)
+
+[node name="Label" type="Label" parent="GridContainer/BlackBG4/MaxSizeContainer4/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "4:3 or taller"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" type="Node2D" parent="."]
