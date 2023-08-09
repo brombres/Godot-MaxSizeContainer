@@ -4,6 +4,8 @@ All Control nodes have a `rect_min_size` property, but they lack `rect_max_size`
 
 ![DemoGif](./readme_files/demo.gif)
 
+![DemoGif](./readme_files/modes.gif)
+
 About     | Current Release
 ----------|-----------------------
 Version   | 1.3
